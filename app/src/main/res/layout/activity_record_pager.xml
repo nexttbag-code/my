@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fitsSystemWindows="true"
+    android:padding="0dp">
+
+    <!-- iOS 风格标题栏 -->
+    <RelativeLayout
+        android:id="@+id/ios_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        android:elevation="2.5dp">
+
+        <!-- 返回按钮 -->
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:padding="6dp"
+            android:contentDescription="返回"
+            android:src="@drawable/ic_back"
+            app:tint="#0066CC" />
+
+        <!-- 居中标题 -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="记录"
+            android:textColor="#0066CC"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <!-- 可选右侧按钮 -->
+        <Button
+            android:id="@+id/btn_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="复制"
+            android:textColor="#0066CC"
+            android:background="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:paddingEnd="6dp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <!-- 底部分隔线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0"/>
+    </RelativeLayout>
+
+    <!-- 月份选择栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="#F8F9FA"
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月份：  "
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="#0066CC"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+
+    <!-- TabLayout 滑动月份栏 -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#F8F9FA"
+        android:elevation="2dp"
+        app:tabIndicatorColor="#0066CC"
+        app:tabSelectedTextColor="#0066CC"
+        app:tabTextColor="#888888"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"
+        app:tabIndicatorFullWidth="false"/>
+
+    <!-- ViewPager2 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_bill"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

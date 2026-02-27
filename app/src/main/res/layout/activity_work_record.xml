@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:orientation="vertical">
+
+    <!-- iOS 风格标题栏 -->
+    <include layout="@layout/title_booking" />
+
+    <!-- 可滚动内容 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <!-- 结果显示框 -->
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="14dp"
+                android:text="Action Sheet title"
+                android:textColor="#212121"
+                android:textSize="18sp"
+                android:gravity="start"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- 按钮区固定在底部 -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_read"
+            style="@style/ActivityButtonStyle"
+            android:text="@string/read"
+            app:icon="@drawable/book_light"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_listen"
+            style="@style/ActivityButtonStyle"
+            android:text="@string/listen"
+            app:icon="@drawable/headphones_fill_light"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_spoken"
+            style="@style/ActivityButtonStyle"
+            android:text="@string/spoken"
+            app:icon="@drawable/edit_light"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_move"
+            style="@style/ActivityButtonStyle"
+            android:text="@string/move"
+            app:icon="@drawable/view_light"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_rest"
+            style="@style/ActivityButtonStyle"
+            android:text="@string/rest"
+            app:icon="@drawable/drink_light"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_nap"
+            style="@style/ActivityButtonStyle"
+            android:text="@string/nap"
+            app:icon="@drawable/flag_light"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_game"
+            style="@style/ActivityButtonStyle"
+            android:text="@string/game"
+            app:icon="@drawable/gamepad_light"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_code"
+            style="@style/ActivityButtonStyle"
+            android:text="@string/code"
+            app:icon="@drawable/code_light"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_exercise"
+            style="@style/ActivityButtonStyle"
+            android:text="@string/exercise"
+            app:icon="@drawable/ball"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sleep"
+            style="@style/ActivityButtonStyle"
+            android:text="@string/sleep"
+            app:icon="@drawable/bed_light"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_recall"
+            style="@style/ActivityButtonStyle"
+            android:text="@string/recall"
+            app:icon="@drawable/back_light"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_work"
+            style="@style/ActivityButtonStyle"
+            android:text="@string/work"
+            app:icon="@drawable/circle_right_alt_light"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_chart"
+            style="@style/ActivityButtonStyle"
+            android:layout_columnSpan="3"
+            android:text="查看年度统计"
+            app:backgroundTint="@null"
+            />
+
+    </GridLayout>
+
+
+</LinearLayout>
+
+

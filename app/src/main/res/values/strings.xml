@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Write Down</string>
+    <string name="work_record">Record</string>
+    <string name="read">阅读</string>
+    <string name="rest">休息</string>
+    <string name="listen">听力</string>
+    <string name="sleep">睡觉</string>
+    <string name="work">工作</string>
+    <string name="move">看剧</string>
+    <string name="game">游戏</string>
+    <string name="nap">小憩</string>
+    <string name="spoken">写作</string>
+    <string name="code">编程</string>
+    <string name="recall">撤回</string>
+    <string name="exercise">锻炼</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

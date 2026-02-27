@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基本颜色 -->
+    <color name="black">#212121</color>        <!-- 深灰色，更柔和的黑色 -->
+    <color name="white">#FFFFFF</color>        <!-- 浅白色，柔和的白色 -->
+
+    <!-- 视窗背景与文字颜色 -->
+    <color name="tv_main">#E0E0E0</color>      <!-- 浅灰色背景，提升清爽感 -->
+    <color name="tv_txt">#333333</color>       <!-- 深灰色文字，提升对比度 -->
+    <color name="tv_txt_bull">#FF4081</color>  <!-- 活泼的粉色，用于标题或强调文字 -->
+
+    <!-- 按钮背景、文字与边框 -->
+    <color name="my_button_bg">#607D8B</color>  <!-- 深灰蓝色背景，更具现代感 -->
+    <color name="my_button_text">#FFFFFF</color> <!-- 白色文字，突出按钮文字 -->
+    <color name="my_button_stroke">#B0BEC5</color> <!-- 边框颜色，浅灰蓝色调，给按钮更多层次感 -->
+
+    <!-- 可选的状态颜色 -->
+    <color name="button_pressed_bg">#4E6D75</color>  <!-- 按钮按下时的背景色，深一点的蓝灰色 -->
+    <color name="button_focused_bg">#8D99A6</color>  <!-- 按钮聚焦时的背景色，稍亮一点的蓝灰色 -->
+</resources>

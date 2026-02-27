@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="#FFFFFF"
+    android:elevation="2dp">
+
+    <!-- 返回按钮 -->
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:padding="6dp"
+        android:contentDescription="返回"
+        android:src="@drawable/ic_back"
+        app:tint="#0066CC" />
+
+    <!-- 居中标题 -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="#0066CC"
+        android:textSize="18sp"
+       />
+
+    <!-- 可选右侧操作按钮 -->
+    <TextView
+        android:id="@+id/tv_option"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:textColor="#0066CC"
+        android:textSize="16sp" />
+
+    <!-- 底部分隔线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E0E0E0"/>
+</RelativeLayout>
